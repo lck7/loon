@@ -1,0 +1,11 @@
+
+# 名称: Apple
+# 作者: lck
+# 时间: 2024-03-11 03:02:50
+# 数量: 6
+DOMAIN,appleid.apple.com
+DOMAIN,appleid.cdn-apple.com
+DOMAIN,gsa.apple.com
+DOMAIN,idmsa.apple.com
+DOMAIN,apps.apple.com
+DOMAIN,itunes.apple.com
