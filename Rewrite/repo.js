@@ -1,6 +1,6 @@
 /**
 允许引用Github私有仓库/gist中的订阅分流，重写，脚本等配置文件。❗️仅Loon & Surge可用
-@author: lck
+作者: lck
 🛎[配置说明]
 0️⃣ 
 使用Loon插件:
