@@ -2,9 +2,6 @@
 # 作者: lck
 # 时间: 2024-03-09 12:42:29
 # 数量: 1864
-DOMAIN,bag.itunes.apple.com
-DOMAIN,comm-main.ess.apple.com
-####
 DOMAIN,apps.apple.com
 DOMAIN,a1.mzstatic.com
 DOMAIN,a2.mzstatic.com
