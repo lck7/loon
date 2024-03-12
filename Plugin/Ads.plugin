@@ -3,7 +3,7 @@
 #!openUrl = 
 #!author = 秋
 #!homepage = https://github.com/lck7/loon/tree/main/Plugin
-#!icon = "https://raw.githubusercontent.com/lck7/icon/main/logo.png
+#!icon = https://raw.githubusercontent.com/lck7/icon/main/logo.png
 #!date = 2024-03-13 05:43:44
 
 [Rule]
