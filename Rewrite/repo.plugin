@@ -1,9 +1,0 @@
-# 名称：GitHub Private Access
-# 效果：GitHub 访问私有仓库
-# 作者：lck
-
-[MITM]
-hostname = raw.githubusercontent.com, gist.githubusercontent.com
-
-[Script]
-http-request ^https?:\/\/(raw|gist)\.githubusercontent.com, requires-body=0, script-path=https://raw.githubusercontent.com/lck7/loon/main/Rewrite/repo.js, tag=Github Private
