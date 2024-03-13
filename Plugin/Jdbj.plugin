@@ -1,0 +1,13 @@
+#!name = 京东比价
+#!desc = 在京东应用内嵌入比价信息，点击商品标题即可查看。仅支持京东的标准模式。
+#!openUrl = 
+#!author = 秋
+#!homepage = https://github.com/lck7/loon/tree/main/Plugin
+#!icon = https://raw.githubusercontent.com/lck7/icon/main/icon/JD.png
+#!date = 2024-03-08 13:40:46
+
+[Script]
+http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) script-path = https://raw.githubusercontent.com/lck7/loon/main/js/JDbj.js, requires-body = true, tag = 京东比价
+  
+[Mitm]
+hostname = api.m.jd.com
