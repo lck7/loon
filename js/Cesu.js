@@ -1,4 +1,6 @@
 /*
+各种花里胡哨参数，通过argument传入，用=连接key及相应value，用&链接各种key，可以任意选择想填入的参数
+title：标题
 iconfast、iconmid、iconslow 分别对应测速快中慢时的图标
 colorlow、colormid、colorhigh 分别对应延迟低中高时的图标颜色
 mb参数：每次测试消耗的流量，默认1MB，经测试最大可4MB参数：&mb=4
