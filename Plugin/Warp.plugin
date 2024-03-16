@@ -8,7 +8,7 @@
 
 [Script]
 # WARP节点查询
-generic script-path = https://raw.githubusercontent.com/lck7/loon/main/js/Warp.js, timeout = 10, tag = WARP节点查询, img-url = https://raw.githubusercontent.com/lck7/icon/main/icon/Warp.png
+generic script-path = https://raw.githubusercontent.com/lck7/loon/main/js/Warp.js, timeout = 10, tag = WARP · 查询, img-url = https://raw.githubusercontent.com/lck7/icon/main/icon/Warp.png
 
 # img-url = icloud.circle.system
 
