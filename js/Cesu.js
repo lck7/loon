@@ -57,33 +57,34 @@ if (typeof $argument != 'undefined') {
   color = shifts[b]
   // 构造面板
   let Panel = {};
-  if ($.isStash()) Panel.title = arg?.title ?? "网速测试"
-  else Panel.title = arg?.title ?? "网速测试"
+  if ($.isStash()) Panel.title = arg?.title ?? "🔔网速测试🔔"
+  else Panel.title = arg?.title ?? "🔔网速测试🔔"
   if ($.isLoon()) {
       Panel.message = `------------------------------\n`
-      + `🔔下行速率🎉：${round(Math.abs(speed * 8))}Mbps [${round(Math.abs(speed, 2), 1)}MB/s]\n`
-      + `🔔网络延时🎉：${pingt}ms\n`
-      + `🔔测试用时🎉：${round(Math.abs(duration, 2),2)}s\n`
-      + `🔔测试时间🎉：${new Date().toTimeString().split(' ')[0]}\n`
+      + `🎉网络延时：${pingt}ms\n`
+      + `🎉测试用时：${round(Math.abs(duration, 2),2)}s\n`
+      + `🎉测试时间：${new Date().toTimeString().split(' ')[0]}\n`
+      + `🎉下行速率：${round(Math.abs(speed * 8))}Mbps [${round(Math.abs(speed, 2), 1)}MB/s]\n`
       + `------------------------------\n`
-      + '🔔节点🎉 ➟ ' + $environment.params.nodeInfo.name
+      + '🎉节点 ➟ ' + $environment.params.nodeInfo.name
   } else if ($.isQuanX()) {
       Panel.message = `------------------------------\n`
-      + `🔔下行速率🎉：${round(Math.abs(speed * 8))}Mbps [${round(Math.abs(speed, 2), 1)}MB/s]\n`
-      + `🔔网络延时🎉：${pingt}ms\n`
-      + `🔔测试用时🎉：${round(Math.abs(duration, 2),2)}s\n`
-      + `🔔测试时间🎉：${new Date().toTimeString().split(' ')[0]}\n`
+      + `🎉网络延时🎉：${pingt}ms\n`
+      + `🎉测试用时🎉：${round(Math.abs(duration, 2),2)}s\n`
+      + `🎉测试时间🎉：${new Date().toTimeString().split(' ')[0]}\n`
+      + `🎉下行速率🎉：${round(Math.abs(speed * 8))}Mbps [${round(Math.abs(speed, 2), 1)}MB/s]\n`
       + `------------------------------\n`
-      + '🔔节点🎉 ➟ ' + $environment.params
+      + '🎉节点🎉 ➟ ' + $environment.params
   } else if ($.isSurge() || $.isStash()) {
       if ($.isStash()) Panel.icon = arg?.icon ?? icon;
       else Panel.icon = arg?.icon ?? icon;
       Panel["icon-color"] = arg?.iconColor ?? color;
       if ($.isStash()) Panel.backgroundColor = arg?.backgroundColor ?? "#f6821f";
-      Panel.content = `🔔下行速率🎉: ${round(Math.abs(speed * 8))}Mbps [${round(Math.abs(speed, 2), 1)}MB/s]\n`
-      + `🔔网络延时🎉：${pingt}ms\n`
-      + `🔔测试用时🎉：${round(Math.abs(duration, 2),2)}s\n`
-      + `🔔测试时间🎉：${new Date().toTimeString().split(' ')[0]}\n`
+      Panel.content = `------------------------------\n`
+      + `🎉网络延时：${pingt}ms\n`
+      + `🎉测试用时：${round(Math.abs(duration, 2),2)}s\n`
+      + `🎉测试时间：${new Date().toTimeString().split(' ')[0]}\n`
+      + `🎉下行速率: ${round(Math.abs(speed * 8))}Mbps [${round(Math.abs(speed, 2), 1)}MB/s]\n`
   };
   $.log(JSON.stringify(Panel));
   $.done(Panel)
