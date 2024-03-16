@@ -61,12 +61,12 @@ if (typeof $argument != 'undefined') {
   else Panel.title = arg?.title ?? "网速测试"
   if ($.isLoon()) {
       Panel.message = `------------------------------\n`
-      + `下行速率：${round(Math.abs(speed * 8))}Mbps [${round(Math.abs(speed, 2), 1)}MB/s]\n`
-      + `网络延时：${pingt}ms\n`
-      + `测试用时：${round(Math.abs(duration, 2),2)}s\n`
-      + `测试时间：${new Date().toTimeString().split(' ')[0]}\n`
+      + `🔔下行速率🎉：${round(Math.abs(speed * 8))}Mbps [${round(Math.abs(speed, 2), 1)}MB/s]\n`
+      + `🔔网络延时🎉：${pingt}ms\n`
+      + `🔔测试用时🎉：${round(Math.abs(duration, 2),2)}s\n`
+      + `🔔测试时间🎉：${new Date().toTimeString().split(' ')[0]}\n`
       + `------------------------------\n`
-      + '节点 ➟ ' + $environment.params.nodeInfo.name
+      + '🔔节点🎉 ➟ ' + $environment.params.nodeInfo.name
   } else if ($.isQuanX()) {
       Panel.message = `------------------------------\n`
       + `🔔下行速率🎉：${round(Math.abs(speed * 8))}Mbps [${round(Math.abs(speed, 2), 1)}MB/s]\n`
