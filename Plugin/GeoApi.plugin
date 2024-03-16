@@ -1,7 +1,9 @@
 #!name=GeoApi
 #!desc=节点信息查询（IP，服务商，国家，时区，经纬度，货币）
-#!homepage= 
-#!author= 秋
-#!icon=  https://github.com/lck7/loon/tree/main/Plugin
+#!openUrl = 
+#!author = 秋
+#!homepage = https://github.com/lck7/loon/tree/main/Plugin
+#!icon = https://raw.githubusercontent.com/lck7/icon/main/icon/Domestic.png
+#!date = 2024-03-17 04:53:44
 [Script]
 generic script-path=https://raw.githubusercontent.com/lck7/loon/main/js/ip-api.js,tag=节点信息查询,img-url= https://raw.githubusercontent.com/lck7/icon/main/icon/Domestic.png,timeout=10
