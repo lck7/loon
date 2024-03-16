@@ -13,7 +13,7 @@ var requestParams = {
 
 var message = ""
 const paras = ["query","as","isp","country","city","timezone","lon","lat","currency"];
-const paran = ["🗺️远端IP地址","📡远端IP ️ASN","🖥️ASN所属机构","🌍国家/地区","🏘️城市","⏰时区","📍经度","📍纬度","💰货币"];
+const paran = ["🗺️远端IP地址","📡远端IPASN","🖥️ASN所属机构","🌍国家/地区","🏘️城市","⏰时区","📍经度","📍纬度","💰货币"];
 
 $httpClient.get(requestParams, (error, response, data) => {
     if (error) {
