@@ -80,10 +80,10 @@ if (typeof $argument != 'undefined') {
       else Panel.icon = arg?.icon ?? icon;
       Panel["icon-color"] = arg?.iconColor ?? color;
       if ($.isStash()) Panel.backgroundColor = arg?.backgroundColor ?? "#f6821f";
-      Panel.content = `下行速率: ${round(Math.abs(speed * 8))}Mbps [${round(Math.abs(speed, 2), 1)}MB/s]\n`
-      + `网络延时：${pingt}ms\n`
-      + `测试用时：${round(Math.abs(duration, 2),2)}s\n`
-      + `测试时间：${new Date().toTimeString().split(' ')[0]}\n`
+      Panel.content = `🔔下行速率🎉: ${round(Math.abs(speed * 8))}Mbps [${round(Math.abs(speed, 2), 1)}MB/s]\n`
+      + `🔔网络延时🎉：${pingt}ms\n`
+      + `🔔测试用时🎉：${round(Math.abs(duration, 2),2)}s\n`
+      + `🔔测试时间🎉：${new Date().toTimeString().split(' ')[0]}\n`
   };
   $.log(JSON.stringify(Panel));
   $.done(Panel)
