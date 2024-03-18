@@ -3,12 +3,6 @@
 
 远程重写支持多链接输入，链接间用😂连接 可以 重写 模块 插件 混合传入
 
-说明
-原脚本作者@小白脸 脚本修改@chengkongyiban
-感谢@xream 提供的replace-Header.js
-               echo-response.js
-感谢@mieqq 提供的replace-body.js
-插件图标用的 @Keikinn 的 StickerOnScreen项目 以及 @Toperlock 的图标库项目，感谢
 
 项目地址:
 https://github.com/Script-Hub-Org/Script-Hub
