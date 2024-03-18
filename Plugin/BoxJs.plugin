@@ -3,7 +3,7 @@
 #!openUrl=http://boxjs.com
 #!author=秋
 #!homepage=https://chavyleung.gitbook.io/boxjs/
-#!icon=https://raw.githubusercontent.com/lck7/icon/main/icon/Boxjs.png
+#!icon=https://raw.githubusercontent.com/lck7/icon/main/icon/BoxJs.png
 
 [Rule]
 DOMAIN-SUFFIX,jsdelivr.net,PROXY
