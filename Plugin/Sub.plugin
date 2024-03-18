@@ -2,7 +2,7 @@
 #!desc=高级订阅管理工具. 
 #!openUrl=https://sub.store
 #!author=秋
-#!homepage=https://github.com/lck7/loon/tree/main/Plugin
+#!homepage=https://github.com/sub-store-org/Sub-Store
 #!icon=https://raw.githubusercontent.com/lck7/icon/main/icon/Sub.png
 
 [Rule]
