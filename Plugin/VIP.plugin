@@ -16,6 +16,8 @@ http-request ^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satel
 http-response ^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) script-path=https://raw.githubusercontent.com/lck7/Rewrite/main/Mtxx.js, requires-body=true, timeout=60, tag=美图秀秀
 # 万年历 #
 http-response ^https?:\/\/.*\.jiemengjia\.com\/(member\/(member_info|pay_verify_new|create_order)|dialogue\/adspace) script-path=https://raw.githubusercontent.com/lck7/Rewrite/main/Wannianli.js, requires-body=true, timeout=60, tag=万年历
+# 爱剪辑 #
+http-response ^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCoreAsync|GetUserDetail) script-path=https://raw.githubusercontent.com/lck7/Rewrite/main/Ajj.js, requires-body=true, tag=爱剪辑
 
 [MITM]
-hostname = *.cyapi.cn, *.caiyunapp.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, *.jiemengjia.com
+hostname = *.cyapi.cn, *.caiyunapp.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, *.jiemengjia.com, api.open.loveclip.site
