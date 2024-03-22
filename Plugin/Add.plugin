@@ -90,5 +90,5 @@ DOMAIN,sdk.tianmu.mobi,REJECT
 
 
 
-
+[MITM]
 hostname = service.gd.10086.cn,acs.m.goofish.com,iyes.youku.com,acs.m.taobao.com,gw.alicdn.com,api.yangkeduo.com,api.pinduoduo.com,gd.10086.cn,43.241.18.24
