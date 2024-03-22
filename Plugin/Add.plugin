@@ -79,7 +79,7 @@ DOMAIN,sdk.tianmu.mobi,REJECT
 # > 拼多多去广告 //api.pinduoduo.com, api.yangkeduo.com
 ^https:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash reject
 
-# > 广告移动去广告
+# > 广东移动去广告
 ^https?:\/\/gd\.10086\.cn\/gmccfile\/file\/image\/preloading703\/pre202[0-9]{20}\.jpg reject-200
 # 广东移动去开屏
 ^https:\/\/service\.gd\.10086\.cn\/gdcmc\/reso\/d\/ts-area\/10011001-1246\.json reject-dict
