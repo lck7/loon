@@ -1,0 +1,94 @@
+#!name = 广告过滤器
+#!desc = 自用的广告过滤器
+#!openUrl = 
+#!author = 秋
+#!homepage = https://github.com/lck7/loon/tree/main/Plugin
+#!icon = https://raw.githubusercontent.com/lck7/icon/main/logo.png
+#!date = 2024-03-22 18:32:44
+
+
+
+[Rule]
+# 中国联通
+DOMAIN-SUFFIX,m1.ad.10010.com,REJECT
+# 中国电信
+DOMAIN,ad.21cn.com,REJECT
+DOMAIN,ad.k.21cn.com,REJECT
+DOMAIN,admarket.21cn.com,REJECT
+DOMAIN,adshows.21cn.com,REJECT
+IP-CIDR,122.229.8.47/32,REJECT
+IP-CIDR,122.229.29.89/32,REJECT
+# 中国移动
+IP-CIDR,120.240.95.37/32,REJECT
+# 手机QQ
+DOMAIN,adsmind.gdtimg.com,REJECT
+DOMAIN,pgdt.gtimg.cn,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+# 美团
+DOMAIN,al-log.d.meituan.net,REJECT
+DOMAIN,babel-statistics-android.d.meituan.net,REJECT
+DOMAIN,maplocatesdksnapshot.d.meituan.net,REJECT
+DOMAIN,metrics-picture.d.meituan.net,REJECT
+DOMAIN,route-stats.d.meituan.net,REJECT
+# 字节跳动 - 广告服务商
+DOMAIN,ad.zijieapi.com,REJECT
+DOMAIN,i.snssdk.com,REJECT
+DOMAIN,is.snssdk.com,REJECT
+DOMAIN-KEYWORD,-ad-sign.byteimg.com,REJECT
+DOMAIN-KEYWORD,-tos.pstatp.com,REJECT-DROP
+DOMAIN-KEYWORD,asiad.byteactivity,REJECT
+DOMAIN-KEYWORD,pangolin.snssdk.com,REJECT
+DOMAIN-KEYWORD,pangolin-sdk-toutiao,REJECT
+DOMAIN-KEYWORD,pglstatp-toutiao,REJECT
+DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
+# 快手联盟 - 广告服务商
+DOMAIN,open.e.kuaishou.com,REJECT
+# 秒针系统 - 广告服务商
+DOMAIN-SUFFIX,miaozhen.com,REJECT
+# 达佳互联 - 广告服务商
+DOMAIN-SUFFIX,adukwai.com,REJECT
+# 艾狄墨搏 - 广告服务商
+DOMAIN,monitor.ssp.admobile.top,REJECT
+DOMAIN,sdk.ssp.admobile.top,REJECT
+DOMAIN-SUFFIX,admobile.top,REJECT
+# 极光 - 广告服务商
+DOMAIN-SUFFIX,jiguang.cn,REJECT
+# 百度联盟 - 广告服务商
+DOMAIN-SUFFIX,union.baidu.cn,REJECT
+DOMAIN-SUFFIX,union.baidu.com,REJECT
+# 腾讯优量汇 - 广告服务商
+DOMAIN,mazu.m.qq.com,REJECT
+DOMAIN,sdk.e.qq.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+# 天目 - 广告服务商
+DOMAIN,sdk.tianmu.mobi,REJECT
+
+
+
+[Rewrite]
+# > 闲鱼去广告 //gw.alicdn.com, acs.m.taobao.com
+^https:\/\/gw\.alicdn\.com\/mt\/ reject
+^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} reject
+^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} reject
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome reject
+# > 闲鱼 - 开屏广告
+^https:\/\/iyes\.youku\.com\/uts\/v1\/start\/ reject-dict
+# 闲鱼 - 底部浮层发布球
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.get\/ reject-dict
+
+# > 拼多多去广告 //api.pinduoduo.com, api.yangkeduo.com
+^https:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash reject
+
+# > 广告移动去广告
+^https?:\/\/gd\.10086\.cn\/gmccfile\/file\/image\/preloading703\/pre202[0-9]{20}\.jpg reject-200
+# 广东移动去开屏
+^https:\/\/service\.gd\.10086\.cn\/gdcmc\/reso\/d\/ts-area\/10011001-1246\.json reject-dict
+
+# > 777影视去广告
+^https:\/\/43\.241\.18\.24:9090\/qiqiqi\.php\/v6\/top_notice reject-dict
+^https:\/\/43\.241\.18\.24:9090\/qiqiqi\.php\/v6\/app_config reject-dict
+
+
+
+
+hostname = service.gd.10086.cn,acs.m.goofish.com,iyes.youku.com,acs.m.taobao.com,gw.alicdn.com,api.yangkeduo.com,api.pinduoduo.com,gd.10086.cn,43.241.18.24
