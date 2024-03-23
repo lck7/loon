@@ -359,7 +359,7 @@ function getSystemCfgs() {
       { id: 'Shadowrocket', icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/shadowrocket.png', 'https://raw.githubusercontent.com/Orz-3/mini/master/Color/shadowrocket.png'] },
       { id: 'Stash', icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/stash.png', 'https://raw.githubusercontent.com/Orz-3/mini/master/Color/stash.png'] }
     ],
-    lck: { id: 'lck7', icons: 'https://raw.githubusercontent.com/lck7/icon/main/logo.png', repo: 'https://github.com/lck7' },
+    lck7: { id: 'lck7', icon: 'https://raw.githubusercontent.com/lck7/icon/main/logo.png', repo: 'https://github.com/lck7' },
     chavy: { id: 'ChavyLeung', icon: 'https://avatars3.githubusercontent.com/u/29748519', repo: 'https://github.com/chavyleung/scripts' },
     senku: { id: 'GideonSenku', icon: 'https://avatars1.githubusercontent.com/u/39037656', repo: 'https://github.com/GideonSenku' },
     id77: { id: 'id77', icon: 'https://avatars0.githubusercontent.com/u/9592236', repo: 'https://github.com/id77' },
