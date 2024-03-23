@@ -88,9 +88,9 @@ let sufkeepHeader = keepHeader == true ? '&keepHeader=true' : '' //用于保留h
 let sufjsDelivr = jsDelivr == true ? '&jsDelivr=true' : '' //用于开启jsDeliver的后缀
 
 //插件图标区域
-const iconStatus = $.getval('启用插件随机图标') ?? '启用'
-const iconReplace = $.getval('替换原始插件图标') ?? '禁用'
-const iconLibrary1 = $.getval('插件随机图标合集') ?? 'Doraemon(100P)'
+const iconStatus = $.getval('启用插件随机图标') ?? ''
+const iconReplace = $.getval('替换原始插件图标') ?? ''
+const iconLibrary1 = $.getval('插件随机图标合集') ?? ''
 const iconLibrary2 = iconLibrary1.split('(')[0]
 const iconFormat = /gif/i.test(iconLibrary2) ? '.gif' : '.png'
 
